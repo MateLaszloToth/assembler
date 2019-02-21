@@ -1,0 +1,16 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package prob0719;
+
+/**
+ *
+ * @author matetoth
+ */
+public enum ParseState {
+    PS_START, PS_UNARYINST, PS_INSTSPEC,
+    PS_OPERANDSPEC, PS_NONUNARYINST, PS_PDotBlock,
+    PS_PDotEnd, PS_DATASPACE, PS_FINISH
+}

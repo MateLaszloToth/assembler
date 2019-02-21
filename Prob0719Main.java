@@ -3,6 +3,7 @@ package prob0719;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+import java.lang.*;
 
 /**
  * Chapter 7, Problem 19 from <i>Computer Systems</i>.
@@ -11,13 +12,13 @@ import javax.swing.*;
  * File: <code>Prob0719Main.java</code>
  *
  * <p>
- * Name:
+ * Name: Mate Toth
  *
  * <p>
- * Date:
+ * Date: 2 April 2018
  *
  * <p>
- * Assignment:
+ * Assignment: 19
  */
 public class Prob0719Main implements ActionListener {
 
@@ -78,6 +79,8 @@ public class Prob0719Main implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent event) {
-        System.out.println("Exercise for the student.\n");
+        InBuffer inBuffer = new InBuffer(textArea.getText());
+        Translator tr = new Translator(inBuffer);
+        tr.translate();
     }
 }
